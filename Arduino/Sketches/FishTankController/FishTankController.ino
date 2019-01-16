@@ -170,7 +170,7 @@ void setup()
   //******************************************************************************************
   //Polling Sensors
   //static st::PS_Water               sensor1(F("water1"), 60, 20, PIN_WATER_1, 200);
-  static st::PS_DS18B20_Temperature sensor2(F("temperature1"), 15, 0, PIN_TEMPERATURE_1, false, 10, 1); 
+  static st::PS_DS18B20_Temperature sensor2(F("temperature1"), 15, 0, PIN_TEMPERATURE_1, false, 10, 2); 
   
   //Interrupt Sensors 
   static st::IS_Contact             sensor3(F("contact1"), PIN_CONTACT_1, LOW, true);
