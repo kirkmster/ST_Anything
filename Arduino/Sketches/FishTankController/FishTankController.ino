@@ -102,7 +102,7 @@
 //******************************************************************************************
 String str_ssid     = "south";                           //  <---You must edit this line!
 String str_password = "a3a56ce388";                   //  <---You must edit this line!
-IPAddress ip(192, 168, 1, 162);       //Device IP Address       //  <---You must edit this line!
+IPAddress ip(192, 168, 1, 161);       //Device IP Address       //  <---You must edit this line!
 IPAddress gateway(192, 168, 1, 1);    //Router gateway          //  <---You must edit this line!
 IPAddress subnet(255, 255, 255, 0);   //LAN subnet mask         //  <---You must edit this line!
 IPAddress dnsserver(192, 168, 1, 1);  //DNS server              //  <---You must edit this line!
@@ -184,9 +184,9 @@ void setup()
   
   //Executors
  // static st::EX_Alarm executor1(F("alarm1"), PIN_ALARM_1, LOW, true);
-  static st::EX_Switch executor2(F("switch1"), PIN_SWITCH_1, LOW, false);  //Inverted logic for "Active Low" Relay Board
-  static st::EX_Switch executor3(F("switch2"), PIN_SWITCH_2, LOW, false);  //Inverted logic for "Active Low" Relay Board
-  static st::EX_Switch executor4(F("switch3"), PIN_SWITCH_3, LOW, false);  //Inverted logic for "Active Low" Relay Board
+  static st::EX_Switch executor2(F("switch1"), PIN_SWITCH_1, LOW, true);  //Inverted logic for "Active Low" Relay Board
+  static st::EX_Switch executor3(F("switch2"), PIN_SWITCH_2, LOW, true);  //Inverted logic for "Active Low" Relay Board
+  static st::EX_Switch executor4(F("switch3"), PIN_SWITCH_3, LOW, true);  //Inverted logic for "Active Low" Relay Board
   
   //*****************************************************************************
   //  Configure debug print output from each main class 
